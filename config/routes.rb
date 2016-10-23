@@ -4,5 +4,6 @@ Rails.application.routes.draw do
 
   namespace :api do
     post :signin, to: 'sessions#create'
+    resources :posts
   end
 end
